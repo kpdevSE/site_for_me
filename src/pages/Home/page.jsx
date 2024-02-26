@@ -16,7 +16,7 @@ const Home = () =>
         <div className={`w-full h-full  text-white ${style.body} flex items-center justify-center flex-col`} >
             <Navigation />
             <ParticleBackground />
-            <div className='flex items-center justify-between w-[85%] h-screen mx-auto flex-col lg:flex-row md:flex-row gap-6'>
+            <div className='flex items-center justify-between w-[85%] lg:h-[100vh] h-full  mx-auto flex-col lg:flex-row md:flex-row gap-6'>
                 <div className='flex flex-col items-start justify-start w-full lg:w-[50%] md:w-[60%] gap-4'>
                     <div className={`${style.text} lg:w-[400px] lg:h-[53px] w-[300px] h-[45px] flex items-center justify-center rounded-xl gap-4 lg:mt-0 mt-24`}>
                         <div className='text-2xl'>
