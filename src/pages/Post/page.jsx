@@ -25,11 +25,13 @@ const Post = () =>
     }
 
     return (
-        <div>
+        <div className='text-white'>
             <ParticleBackground />
             <h1 className='text-red-300'>Details of {id}</h1>
             <h1>{user.name}</h1>
-            <p>{user.job}</p>
+            <p>{user.technolodgy}</p>
+            <p>{user.description}</p>
+            <a href={user.liveDemo}>Live Demo</a>
         </div>
     );
 };
