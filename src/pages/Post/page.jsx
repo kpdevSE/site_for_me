@@ -1,4 +1,6 @@
 import React from 'react';
+import {IoHome} from "react-icons/io5";
+import {TbSourceCode} from "react-icons/tb";
 import {Link, useParams} from 'react-router-dom';
 import {data} from '../../data/data';
 
@@ -34,15 +36,19 @@ const Post = () =>
                         <h1 className='lg:text-4xl md:text-3xl text-2xl'>{user.name}</h1>
                         <p className='text-red-500 font-semibold'>{user.technolodgy}</p>
                         <p className=''>{user.description}</p>
-                        <Link to={'/'} className='mt-10'>
-                            <button className='w-[200px] h-[45px] text-white rounded-lg shadow-lg border border-white'>
-                                Home
-                            </button>
-                        </Link>
+                        <div className='flex items-center justify-center gap-2 lg:flex-row md:flex-row flex-col'>
+                            <a href={user.sourceCode} target='_blank' rel='noreferrer'><button className='w-[200px] h-[45px] text-white rounded-lg shadow-lg border border-white mt-10 flex items-center justify-center gap-2'><TbSourceCode />Source Code</button></a>
+                            <Link to={'/'} className='mt-10'>
+                                <button className='w-[200px] h-[45px] text-white rounded-lg shadow-lg border border-white flex items-center justify-center gap-2'>
+                                    <IoHome />
+                                    Home
+                                </button>
+                            </Link>
+                        </div>
                     </div>
                 </div>
                 <div className='mt-24 w-full'>
-                    <h1 className='text-white text-2xl'>More Screenshot about Project...</h1>
+                    <h1 className='text-white text-2xl'>More Screenshot about Project...😊😊</h1>
                     {user.more.map((e) =>
                     {
                         return (

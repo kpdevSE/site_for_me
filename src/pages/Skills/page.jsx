@@ -22,7 +22,7 @@ import windows from '../../assets/tech/windows-10-icon.png';
 export default function Skills()
 {
     return (
-        <div className='w-[85%] h-full lg:h-[40vh] md:h-full mx-auto flex items-center justify-center flex-col'>
+        <div className='w-[85%] h-full lg:h-[40vh] md:h-full mx-auto flex items-center justify-center flex-col' id="skills">
             <div className="flex items-center justify-center gap-2">
                 <FaGraduationCap className="lg:text-5xl text-3xl" />
                 <h1 className='text-center lg:text-5xl text-3xl font-semibold'>Skills</h1>

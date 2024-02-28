@@ -5,7 +5,7 @@ import {data} from "../../data/data";
 export default function HeroSection()
 {
     return (
-        <div className="w-[85%] mx-auto h-full">
+        <div className="w-[85%] mx-auto h-full" id="myProjects">
             <div className="flex items-center justify-center text-white lg:text-4xl gap-3 font-semibold text-2xl">
                 <GrProjects />
                 <h1>My Projects</h1>

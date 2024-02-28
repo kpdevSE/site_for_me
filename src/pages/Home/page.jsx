@@ -1,5 +1,5 @@
 // Home.js
-import React from 'react';
+import React, {useState} from 'react';
 import {BsStars} from "react-icons/bs";
 import {FaCloudDownloadAlt} from "react-icons/fa";
 import {TypeAnimation} from 'react-type-animation';
@@ -10,12 +10,13 @@ import HeroSection from '../Hero/page';
 import style from '../Home/home.module.css';
 import Skills from '../Skills/page';
 
+
 const Home = () =>
 {
 
-
+    const [activeNav, setActiveNav] = useState('#')
     return (
-        <div className={`w-full h-full  text-white ${style.body} flex items-center justify-center flex-col`} >
+        <div className={`w-full h-full  text-white ${style.body} flex items-center justify-center flex-col`} id='home'>
             <Navigation />
             <ParticleBackground />
             <div className='flex items-center justify-between w-[85%] lg:h-[100vh] h-full  mx-auto flex-col lg:flex-row md:flex-row gap-6'>
@@ -87,9 +88,14 @@ const Home = () =>
                         </span>
                     </p>
                     <div className='mt-10 flex items-start justify-center gap-4 lg:flex-row flex-col md:flex-row'>
-                        <button className='border border-white rounded-lg shadow-lg w-[200px] h-[40px]'>
-                            My Projects
-                        </button>
+                        <a href="#myProjects">
+                            <button className='border border-white rounded-lg shadow-lg w-[200px] h-[40px]' onClick={() =>
+                            {
+                                setActiveNav('#myProjects')
+                            }}>
+                                My Projects
+                            </button>
+                        </a>
                         <button className='border border-white rounded-lg shadow-lg w-[200px] h-[40px] flex items-center justify-center gap-2'>
                             <FaCloudDownloadAlt className='text-2xl' />
                             My CV

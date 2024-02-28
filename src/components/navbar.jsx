@@ -1,12 +1,16 @@
 import {Dialog, Transition} from '@headlessui/react';
 import {XMarkIcon} from '@heroicons/react/24/outline';
 import {Fragment, useState} from 'react';
-import {FaHamburger} from "react-icons/fa";
+import {FaGraduationCap, FaHamburger} from "react-icons/fa";
+import {GrProjects} from "react-icons/gr";
+import {IoHome} from "react-icons/io5";
 import myLogo from '../assets/mylog.png';
+
 
 export default function Navigation()
 {
     const [open, setOpen] = useState(false)
+    const [activeNav, setActiveNav] = useState('#')
 
     return (
         <div className='w-[85%] mx-auto h-[30px] fixed top-0'>
@@ -14,7 +18,15 @@ export default function Navigation()
                 <div>
                     <img src={myLogo} alt="" />
                 </div>
-                <div className=' text-white text-2xl hover:cursor-pointer lg:hidden' onClick={() =>
+                <div className='lg:block hidden md:hidden'>
+                    <ul className='flex items-center gap-10 lg:text-xl md:text-lg font-semibold'>
+                        <li><a href="#home" className='flex items-center justify-center gap-2' onClick={() => setActiveNav('#home')}><IoHome />Home</a></li>
+                        <li><a href="#skills" className='flex items-center justify-center gap-2' onClick={() => setActiveNav('#skills')}><FaGraduationCap />Skills</a></li>
+                        <li><a href="#myProjects" onClick={() => setActiveNav('#myProjects')} className='flex items-center justify-center gap-2'>                <GrProjects />My Projects</a></li>
+                        <li><a href="#skills" className='flex items-center justify-center gap-2'>Skills</a></li>
+                    </ul>
+                </div>
+                <div className=' text-white text-2xl hover:cursor-pointer lg:hidden md:block' onClick={() =>
                 {
                     setOpen(true)
                 }}><FaHamburger /></div>
@@ -64,7 +76,7 @@ export default function Navigation()
                                             <div className="px-4 sm:px-6">
                                                 <Dialog.Title className="text-base font-semibold leading-6 text-gray-900">
                                                     <div className='flex items-center justify-between'>
-                                                        <p className='text-white'>KPDEV</p>
+                                                        <img src={myLogo} alt="" />
                                                         <button
                                                             type="button"
                                                             className="relative rounded-md text-gray-300 hover:text-white focus:outline-none focus:ring-2 focus:ring-white"
@@ -77,7 +89,14 @@ export default function Navigation()
                                                     </div>
                                                 </Dialog.Title>
                                             </div>
-                                            <div className="relative mt-6 flex-1 px-4 sm:px-6">{/* Your content */}</div>
+                                            <div className="relative mt-6 flex-1 px-4 sm:px-6">
+                                                <ul className='flex items-start gap-10 text-xl font-semibold flex-col text-white'>
+                                                    <li><a href="#home" onClick={() => setActiveNav('#')} className='flex items-center justify-center gap-2'><IoHome />Home</a></li>
+                                                    <li><a href="#skills" className='flex items-center justify-center gap-2' onClick={() => setActiveNav('#skills')}><FaGraduationCap />Skills</a></li>
+                                                    <li><a href="#myProjects" onClick={() => setActiveNav('#myProjects')} className='flex items-center justify-center gap-2'><GrProjects />My Projects</a></li>
+                                                    <li><a href="#skills" className='flex items-center justify-center gap-2'>Skills</a></li>
+                                                </ul>
+                                            </div>
                                         </div>
                                     </Dialog.Panel>
                                 </Transition.Child>
