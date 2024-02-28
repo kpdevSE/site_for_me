@@ -2,17 +2,24 @@ import {Dialog, Transition} from '@headlessui/react';
 import {XMarkIcon} from '@heroicons/react/24/outline';
 import {Fragment, useState} from 'react';
 import {FaHamburger} from "react-icons/fa";
+import myLogo from '../assets/mylog.png';
 
 export default function Navigation()
 {
     const [open, setOpen] = useState(false)
 
     return (
-        <div>
-            <div className=' text-white text-2xl hover:cursor-pointer fixed top-2 right-2' onClick={() =>
-            {
-                setOpen(true)
-            }}><FaHamburger /></div>
+        <div className='w-[85%] mx-auto h-[30px] fixed top-0'>
+            <div className='w-[85%] mx-auto h-[50px] flex items-center justify-between px-1 mt-10'>
+                <div>
+                    <img src={myLogo} alt="" />
+                </div>
+                <div className=' text-white text-2xl hover:cursor-pointer lg:hidden' onClick={() =>
+                {
+                    setOpen(true)
+                }}><FaHamburger /></div>
+            </div>
+
             <Transition.Root show={open} as={Fragment}>
                 <Dialog as="div" className="relative z-10" onClose={setOpen}>
                     <Transition.Child
