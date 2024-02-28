@@ -93,7 +93,7 @@ const Home = () =>
                         </span>
                     </p>
                     <div className='mt-10 flex items-start justify-center gap-4 lg:flex-row flex-col md:flex-row'>
-                        <a href="#myProjects">
+                        <a href="#myProjects" className={activeNav === '#myProjects' ? 'active' : ''}>
                             <button className='border border-white rounded-lg shadow-lg w-[200px] h-[40px]' onClick={() =>
                             {
                                 setActiveNav('#myProjects')
