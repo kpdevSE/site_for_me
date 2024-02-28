@@ -4,6 +4,7 @@ import {BsStars} from "react-icons/bs";
 import {FaCloudDownloadAlt} from "react-icons/fa";
 import {TypeAnimation} from 'react-type-animation';
 import mainIcon from '../../assets/company/mainIconsdark.svg';
+import myFile from '../../assets/mycv/Kanishka Pasindu-Software Engineering Intern new.pdf';
 import FloatButtonAction from '../../components/button';
 import Footer from '../../components/footer';
 import Navigation from '../../components/navbar';
@@ -100,10 +101,12 @@ const Home = () =>
                                 My Projects
                             </button>
                         </a>
-                        <button className='border border-white rounded-lg shadow-lg w-[200px] h-[40px] flex items-center justify-center gap-2'>
-                            <FaCloudDownloadAlt className='text-2xl' />
-                            My CV
-                        </button>
+                        <a href={myFile} download="myFile" target='_blank' rel="noreferrer">
+                            <button className='border border-white rounded-lg shadow-lg w-[200px] h-[40px] flex items-center justify-center gap-2'>
+                                <FaCloudDownloadAlt className='text-2xl' />
+                                My CV
+                            </button>
+                        </a>
                     </div>
                 </div>
                 <div className='lg:w-[50%] md:w-[60%] w-full flex items-center justify-center'>
