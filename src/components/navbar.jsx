@@ -21,7 +21,7 @@ export default function Navigation()
                 </div>
                 <div className='lg:block hidden md:hidden'>
                     <ul className='flex items-center gap-10 lg:text-xl md:text-lg font-semibold'>
-                        <li><a href="#home" className='flex items-center justify-center gap-2' onClick={() => setActiveNav('#home')}><IoHome />Home</a></li>
+                        <li className={activeNav === '#' ? 'active' : ''}><a href="#home" className='flex items-center justify-center gap-2' onClick={() => setActiveNav('#home')}><IoHome />Home</a></li>
                         <li><a href="#skills" className='flex items-center justify-center gap-2' onClick={() => setActiveNav('#skills')}><FaGraduationCap />Skills</a></li>
                         <li><a href="#myProjects" onClick={() => setActiveNav('#myProjects')} className='flex items-center justify-center gap-2'>                <GrProjects />My Projects</a></li>
                         <li><a href="#contactme" className='flex items-center justify-center gap-2' onClick={() => setActiveNav('#contactme')}><BsFillTelephoneForwardFill />Contact Me</a></li>

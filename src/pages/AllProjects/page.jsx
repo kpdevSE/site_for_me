@@ -4,7 +4,7 @@ import {FaArrowRight} from "react-icons/fa";
 
 export default function Projects()
 {
-    const [active, setActiveNav] = useState("#");
+    const [activeNav, setActiveNav] = useState("#");
     return (
         <div className="w-[85%] h-full mx-auto">
             <div className="flex lg:items-start lg:justify-between gap-4 lg:flex-row flex-col md:flex-row items-center justify-center">
@@ -14,7 +14,7 @@ export default function Projects()
                         <p className="mt-10 lg:text-4xl md:text-3xl text-4xl">We Are Always Ready </p>
                         <p className="lg:text-4xl md:text-3xl text-4xl">For a <span className="text-orange-200">Challenges</span></p>
                     </div>
-                    <a href="#home">
+                    <a href="#home" className={activeNav === '#' ? 'active' : ''}>
                         <button className='border border-white rounded-lg shadow-lg w-[200px] h-[40px] mt-10 flex items-center justify-center gap-2' onClick={() => setActiveNav('#home')}><FaArrowRight />Learn More</button>
                     </a>
                 </div>
