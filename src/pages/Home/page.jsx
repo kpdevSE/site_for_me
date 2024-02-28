@@ -100,10 +100,10 @@ const Home = () =>
                     <img src={mainIcon} alt="" />
                 </div>
             </div>
-            <div className='mt-16'>
+            <div className='mt-10 md:mt-24'>
                 <Skills />
             </div>
-            <div className='mt-16'>
+            <div className='mt-24 md:mt-36'>
                 <HeroSection />
             </div>
         </div>
