@@ -1,6 +1,7 @@
 import {Dialog, Transition} from '@headlessui/react';
 import {XMarkIcon} from '@heroicons/react/24/outline';
 import {Fragment, useState} from 'react';
+import {BsFillTelephoneForwardFill} from "react-icons/bs";
 import {FaGraduationCap, FaHamburger} from "react-icons/fa";
 import {GrProjects} from "react-icons/gr";
 import {IoHome} from "react-icons/io5";
@@ -23,7 +24,7 @@ export default function Navigation()
                         <li><a href="#home" className='flex items-center justify-center gap-2' onClick={() => setActiveNav('#home')}><IoHome />Home</a></li>
                         <li><a href="#skills" className='flex items-center justify-center gap-2' onClick={() => setActiveNav('#skills')}><FaGraduationCap />Skills</a></li>
                         <li><a href="#myProjects" onClick={() => setActiveNav('#myProjects')} className='flex items-center justify-center gap-2'>                <GrProjects />My Projects</a></li>
-                        <li><a href="#skills" className='flex items-center justify-center gap-2'>Skills</a></li>
+                        <li><a href="#contactme" className='flex items-center justify-center gap-2' onClick={() => setActiveNav('#contactme')}><BsFillTelephoneForwardFill />Contact Me</a></li>
                     </ul>
                 </div>
                 <div className=' text-white text-2xl hover:cursor-pointer lg:hidden md:block' onClick={() =>
@@ -91,10 +92,10 @@ export default function Navigation()
                                             </div>
                                             <div className="relative mt-6 flex-1 px-4 sm:px-6">
                                                 <ul className='flex items-start gap-10 text-xl font-semibold flex-col text-white'>
-                                                    <li><a href="#home" onClick={() => setActiveNav('#')} className='flex items-center justify-center gap-2'><IoHome />Home</a></li>
-                                                    <li><a href="#skills" className='flex items-center justify-center gap-2' onClick={() => setActiveNav('#skills')}><FaGraduationCap />Skills</a></li>
-                                                    <li><a href="#myProjects" onClick={() => setActiveNav('#myProjects')} className='flex items-center justify-center gap-2'><GrProjects />My Projects</a></li>
-                                                    <li><a href="#skills" className='flex items-center justify-center gap-2'>Skills</a></li>
+                                                    <li onClick={() => setOpen(false)}><a href="#home" onClick={() => setActiveNav('#')} className='flex items-center justify-center gap-2' ><IoHome />Home</a></li>
+                                                    <li onClick={() => setOpen(false)}><a href="#skills" className='flex items-center justify-center gap-2' onClick={() => setActiveNav('#skills')}><FaGraduationCap />Skills</a></li>
+                                                    <li onClick={() => setOpen(false)}><a href="#myProjects" onClick={() => setActiveNav('#myProjects')} className='flex items-center justify-center gap-2'><GrProjects />My Projects</a></li>
+                                                    <li onClick={() => setOpen(false)}><a href="#contactme" className='flex items-center justify-center gap-2' onClick={() => setActiveNav('#contactme')}><BsFillTelephoneForwardFill />Contact Me</a></li>
                                                 </ul>
                                             </div>
                                         </div>

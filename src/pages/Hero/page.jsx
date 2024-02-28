@@ -15,7 +15,7 @@ export default function HeroSection()
             </div>
             <div className="grid lg:grid-cols-4 p-1 md:grid-cols-2 grid-cols-1 mt-10 gap-6">
                 {data.users.map(e => (
-                    <Link to={`/posts/${e.id}`}>
+                    <Link to={`/posts/${e.id}`} key={e.id}>
                         <div className="max-w-sm rounded overflow-hidden shadow-lg">
                             <img src={e.image} alt="" className="w-full h-[200px] rounded-xl" />
                             <div className="px-6 py-4" key={e.id}>

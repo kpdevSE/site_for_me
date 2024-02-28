@@ -4,11 +4,15 @@ import {BsStars} from "react-icons/bs";
 import {FaCloudDownloadAlt} from "react-icons/fa";
 import {TypeAnimation} from 'react-type-animation';
 import mainIcon from '../../assets/company/mainIconsdark.svg';
+import FloatButtonAction from '../../components/button';
+import Footer from '../../components/footer';
 import Navigation from '../../components/navbar';
 import ParticleBackground from '../../components/particleBackground';
+import Projects from '../AllProjects/page';
 import HeroSection from '../Hero/page';
 import style from '../Home/home.module.css';
 import Skills from '../Skills/page';
+import ContactUs from '../contact/page';
 
 
 const Home = () =>
@@ -112,6 +116,14 @@ const Home = () =>
             <div className='mt-24 md:mt-36'>
                 <HeroSection />
             </div>
+            <div className='mt-24 md:mt-36'>
+                <Projects />
+            </div>
+            <div className='mt-24 md:mt-36 w-[85%]'>
+                <ContactUs />
+            </div>
+            <Footer />
+            <FloatButtonAction />
         </div>
     );
 };
