@@ -4,7 +4,7 @@ import {BsStars} from "react-icons/bs";
 import {FaCloudDownloadAlt} from "react-icons/fa";
 import {TypeAnimation} from 'react-type-animation';
 import mainIcon from '../../assets/company/mainIconsdark.svg';
-import myFile from '../../assets/mycv/Kanishka Pasindu-Software Engineering Intern new.pdf';
+import myFile from '../../assets/mycv/Kanishka Paisndu Cv.pdf';
 import FloatButtonAction from '../../components/button';
 import Footer from '../../components/footer';
 import Navigation from '../../components/navbar';
