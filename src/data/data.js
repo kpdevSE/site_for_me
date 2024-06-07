@@ -84,6 +84,13 @@ import imageTwoof from "../assets/E-Commerce/imagetwo.jpeg";
 import imageThreeof from "../assets/E-Commerce/contact image.jpeg";
 import imageFourof from "../assets/E-Commerce/aboyiage.jpeg";
 
+// Images of Event planing Website gallery
+import finalMain from "../assets/Final Project/main.jpeg";
+import finaleOne from "../assets/Final Project/booking details.jpeg";
+import finalTwo from "../assets/Final Project/search.jpeg";
+import finalThree from "../assets/Final Project/payment.jpeg";
+import finalFour from "../assets/Final Project/eventdetails.jpeg";
+
 export const data = {
   users: [
     {
@@ -273,7 +280,7 @@ export const data = {
         "Our e-commerce app's frontend, built with Next.js, Tailwind CSS, and Tailwind XSS components, delivers a fast, secure, and visually stunning shopping experience. Utilizing Next.js for superior performance and SEO, and Tailwind CSS for a modern, responsive design, the app ensures a seamless and engaging user journey. Tailwind XSS components add an extra layer of security, safeguarding the interface against vulnerabilities. Enjoy intuitive navigation, advanced search and filtering, real-time notifications, and a secure checkout process across all devices, making shopping effortless and enjoyable.",
       technolodgy: "NEXT JS, TAILWIND CSS (Frontend)",
       image: mainImage,
-      sourceCode: "https://github.com/kpdevSE/travelapp_flutter.git",
+      sourceCode: "https://github.com/kpdevSE/e-commerce.git",
       more: [
         {
           id: 1,
@@ -281,6 +288,25 @@ export const data = {
           imageTwo: imageTwoof,
           imageThree: imageThreeof,
           imageFour: imageFourof,
+        },
+      ],
+    },
+    {
+      id: 12,
+      name: "Events Planing Website",
+      description:
+        "The goal is to develop a new website addressing the complexities of event planning. This platform aims to serve as a comprehensive hub where users in Sri Lanka can effortlessly access a range of services essential for events, such as DJs, sound equipment, and decorations. By consolidating these offerings into a single platform, individuals no longer need to navigate multiple resources or rely on various social media platforms",
+      technolodgy:
+        "NEXT JS, TAILWIND CSS, DAISY UI, (Frontend) ,  PRISMA ORM, MONGODB ,NODEMAILER (Backend)",
+      image: finalMain,
+      sourceCode: "https://github.com/kpdevSE/final_project.git",
+      more: [
+        {
+          id: 1,
+          imageOne: finaleOne,
+          imageTwo: finalTwo,
+          imageThree: finalThree,
+          imageFour: finalFour,
         },
       ],
     },
