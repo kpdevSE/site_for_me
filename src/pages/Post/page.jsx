@@ -1,13 +1,13 @@
 import React from 'react';
-import {IoHome} from "react-icons/io5";
-import {TbSourceCode} from "react-icons/tb";
-import {Link, useParams} from 'react-router-dom';
+import { IoHome } from "react-icons/io5";
+import { TbSourceCode } from "react-icons/tb";
+import { Link, useParams } from 'react-router-dom';
 import Footer from '../../components/footer';
-import {data} from '../../data/data';
+import { data } from '../../data/data';
 
 const Post = () =>
 {
-    const {id} = useParams();
+    const { id } = useParams();
 
     function convertToSlug(text)
     {

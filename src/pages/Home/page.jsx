@@ -14,8 +14,10 @@ import HeroSection from "../Hero/page";
 import style from "../Home/home.module.css";
 import Skills from "../Skills/page";
 import ContactUs from "../contact/page";
+import Experiance from "../Experiance/page";
 
-const Home = () => {
+const Home = () =>
+{
   const [activeNav, setActiveNav] = useState("#");
   return (
     <div
@@ -109,7 +111,8 @@ const Home = () => {
             >
               <button
                 className="border border-white rounded-lg shadow-lg w-[200px] h-[40px]"
-                onClick={() => {
+                onClick={() =>
+                {
                   setActiveNav("#myProjects");
                 }}
               >
@@ -134,10 +137,13 @@ const Home = () => {
       <div className="mt-24 md:mt-36">
         <HeroSection />
       </div>
-      <div className="mt-24 md:mt-36">
+      <div className="mt-40 md:mt-36">
         <Projects />
       </div>
-      <div className="mt-24 md:mt-36 w-[85%]">
+      <div className="mt-40 md:mt-36 w-[85%]">
+        <Experiance />
+      </div>
+      <div className="mt-32 md:mt-36 w-[85%]">
         <ContactUs />
       </div>
       <Footer />

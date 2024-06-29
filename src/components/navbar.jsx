@@ -1,10 +1,11 @@
-import {Dialog, Transition} from '@headlessui/react';
-import {XMarkIcon} from '@heroicons/react/24/outline';
-import {Fragment, useState} from 'react';
-import {BsFillTelephoneForwardFill} from "react-icons/bs";
-import {FaGraduationCap, FaHamburger} from "react-icons/fa";
-import {GrProjects} from "react-icons/gr";
-import {IoHome} from "react-icons/io5";
+import { Dialog, Transition } from '@headlessui/react';
+import { XMarkIcon } from '@heroicons/react/24/outline';
+import { Fragment, useState } from 'react';
+import { BsFillTelephoneForwardFill } from "react-icons/bs";
+import { FaGraduationCap, FaHamburger } from "react-icons/fa";
+import { GrProjects } from "react-icons/gr";
+import { IoHome } from "react-icons/io5";
+import { FaUserGraduate } from "react-icons/fa";
 import myLogo from '../assets/mylog.png';
 
 
@@ -24,6 +25,7 @@ export default function Navigation()
                         <li className={activeNav === '#' ? 'active' : ''}><a href="#home" className='flex items-center justify-center gap-2' onClick={() => setActiveNav('#home')}><IoHome />Home</a></li>
                         <li><a href="#skills" className='flex items-center justify-center gap-2' onClick={() => setActiveNav('#skills')}><FaGraduationCap />Skills</a></li>
                         <li><a href="#myProjects" onClick={() => setActiveNav('#myProjects')} className='flex items-center justify-center gap-2'>                <GrProjects />My Projects</a></li>
+                        <li><a href="#experiance" className='flex items-center justify-center gap-2' onClick={() => setActiveNav('#experiance')}><FaUserGraduate />Experiances</a></li>
                         <li><a href="#contactme" className='flex items-center justify-center gap-2' onClick={() => setActiveNav('#contactme')}><BsFillTelephoneForwardFill />Contact Me</a></li>
                     </ul>
                 </div>

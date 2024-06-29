@@ -1,12 +1,12 @@
-import {useState} from "react";
+import { useState } from "react";
 import CountUp from 'react-countup';
-import {FaArrowRight} from "react-icons/fa";
+import { FaArrowRight } from "react-icons/fa";
 
 export default function Projects()
 {
     const [activeNav, setActiveNav] = useState("#");
     return (
-        <div className="w-[85%] h-full mx-auto">
+        <div className="w-[85%] h-full mx-auto ">
             <div className="flex lg:items-start lg:justify-between gap-4 lg:flex-row flex-col md:flex-row items-center justify-center">
                 <div className="flex flex-col lg:items-start md:items-start items-center lg:w-[30%] w-full md:w-[30%]">
                     <p className="text-white bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 p-2 rounded-lg">Number Speaks</p>

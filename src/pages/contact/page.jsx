@@ -1,10 +1,10 @@
 
-import {BsFillTelephoneForwardFill} from "react-icons/bs";
-import {FaFacebook, FaInstagramSquare} from "react-icons/fa";
-import {FaAddressCard, FaLinkedin} from "react-icons/fa6";
+import { BsFillTelephoneForwardFill } from "react-icons/bs";
+import { FaFacebook, FaInstagramSquare } from "react-icons/fa";
+import { FaAddressCard, FaLinkedin } from "react-icons/fa6";
 
-import {FaMobileAlt} from "react-icons/fa";
-import {MdMarkEmailRead} from "react-icons/md";
+import { FaMobileAlt } from "react-icons/fa";
+import { MdMarkEmailRead } from "react-icons/md";
 import image from '../../assets/sample 02.jpg';
 import FormCom from "../../components/form";
 
@@ -19,7 +19,7 @@ export default function ContactUs()
             <div className='w-[50%] mx-auto bg-gray-700 h-1 mt-2 rounded-xl'>
             </div>
             <div className='w-full h-full flex items-center justify-between lg:flex-row  flex-col gap-4'>
-                <div className='lg:w-[50%] w-full flex flex-col gap-2'>
+                <div className='lg:w-[50%] w-full flex flex-col gap-2  md:mt-24' >
                     <div className='flex items-center justify-center'>
                         <img src={image} alt="" className=' rounded-2xl  w-[300px] h-[400px]' />
                     </div>
