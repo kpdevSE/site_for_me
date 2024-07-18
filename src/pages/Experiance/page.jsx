@@ -55,7 +55,7 @@ export default function Experiance()
                         <Timeline.Point icon={HiCalendar} />
                         <Timeline.Content>
                             <Timeline.Time className="text-lg font-bold">Octomber 2023 - January 2024</Timeline.Time>
-                            <Timeline.Title className="text-white">FLEXY CODE</Timeline.Title>
+                            <Timeline.Title className="text-white">LAKION</Timeline.Title>
                             <Timeline.Title className="text-white text-xl">Software Engineer Intern</Timeline.Title>
                             <Timeline.Body>
                                 I work as a Fullstack interner. i worked with a CRM system using Next js,Prisma and MySql.my goal was completing that task during the internship.i did that task successfully.
