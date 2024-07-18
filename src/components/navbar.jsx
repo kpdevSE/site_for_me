@@ -61,7 +61,7 @@ export default function Navigation()
                                     leaveFrom="translate-x-0"
                                     leaveTo="translate-x-full"
                                 >
-                                    <Dialog.Panel className="pointer-events-auto relative w-screen max-w-md">
+                                    <Dialog.Panel className="pointer-events-auto relative w-screen max-w-md ">
                                         <Transition.Child
                                             as={Fragment}
                                             enter="ease-in-out duration-500"
@@ -75,7 +75,7 @@ export default function Navigation()
 
                                             </div>
                                         </Transition.Child>
-                                        <div className={`flex h-full flex-col overflow-y-scroll  py-6 bg-gradient-to-r from-[rgba(1,0,5,1)] via-[rgba(9,9,69,1)] to-[rgba(0,0,8,1)] shadow-xl `}>
+                                        <div className={`flex h-full flex-col  py-6 bg-gradient-to-r from-[rgba(1,0,5,1)] via-[rgba(9,9,69,1)] to-[rgba(0,0,8,1)] shadow-xl overflow-y-hidden`}>
                                             <div className="px-4 sm:px-6">
                                                 <Dialog.Title className="text-base font-semibold leading-6 text-gray-900">
                                                     <div className='flex items-center justify-between'>
