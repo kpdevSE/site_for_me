@@ -7,7 +7,7 @@ export default function BannerComponet()
 {
     return (
         <Banner>
-            <div className="flex w-full justify-between border-t p-4 dark:border-gray-600 z-50 relative text-white bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-lg">
+            <div className="flex w-full justify-between border-t p-4 dark:border-gray-600  relative text-white bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-lg">
                 <div className="mx-auto flex items-center">
                     <p className="flex items-center text-whit font-bold text-md">
                         <span className="mr-3 inline-flex h-6 w-6 items-center justify-center rounded-full ">
