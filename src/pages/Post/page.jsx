@@ -4,6 +4,7 @@ import { TbSourceCode } from "react-icons/tb";
 import { Link, useParams } from 'react-router-dom';
 import Footer from '../../components/footer';
 import { data } from '../../data/data';
+import { Badge } from "flowbite-react";
 
 const Post = () =>
 {
@@ -36,7 +37,11 @@ const Post = () =>
                         </div>
                         <div className='lg:w-[50%] w-full flex items-start gap-3 flex-col'>
                             <h1 className='lg:text-4xl md:text-3xl text-2xl'>{user.name}</h1>
-                            <p className='text-red-500 font-semibold'>{user.technolodgy}</p>
+                            <div className="flex flex-wrap gap-2">
+                                <Badge color="pink" size="sm">
+                                    {user.technolodgy}
+                                </Badge>
+                            </div>
                             <p className=''>{user.description}</p>
                             <div className='flex items-center justify-center gap-2 lg:flex-row md:flex-row flex-col'>
                                 <a href={user.sourceCode} target='_blank' rel='noreferrer'><button className='w-[200px] h-[45px] text-white rounded-lg shadow-lg border border-white mt-10 flex items-center justify-center gap-2'><TbSourceCode />Source Code</button></a>

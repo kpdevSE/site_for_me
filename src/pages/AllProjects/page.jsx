@@ -11,8 +11,8 @@ export default function Projects()
                 <div className="flex flex-col lg:items-start md:items-start items-center lg:w-[30%] w-full md:w-[30%]">
                     <p className="text-white bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 p-2 rounded-lg">Number Speaks</p>
                     <div className="flex flex-col leading-none">
-                        <p className="mt-10 lg:text-4xl md:text-3xl text-4xl">We Are Always Ready </p>
-                        <p className="lg:text-4xl md:text-3xl text-4xl">For a <span className="text-orange-200">Challenges</span></p>
+                        <p className="mt-10 lg:text-4xl md:text-3xl text-2xl">We Are Always Ready </p>
+                        <p className="lg:text-4xl md:text-3xl text-2xl">For a <span className="text-orange-200">Challenges</span></p>
                     </div>
                     <a href="#home" className={activeNav === '#' ? 'active' : ''}>
                         <button className='border border-white rounded-lg shadow-lg w-[200px] h-[40px] mt-10 flex items-center justify-center gap-2' onClick={() => setActiveNav('#home')}><FaArrowRight />Learn More</button>

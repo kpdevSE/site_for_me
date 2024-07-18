@@ -15,7 +15,7 @@ export default function Navigation()
     const [activeNav, setActiveNav] = useState('#')
 
     return (
-        <div className='w-[85%] mx-auto h-[30px] fixed top-0'>
+        <div className='w-[85%] mx-auto h-[30px] fixed top-0 z-50'>
             <div className='w-[85%] mx-auto h-[50px] flex items-center justify-between px-1 mt-10'>
                 <div>
                     <img src={myLogo} alt="" />

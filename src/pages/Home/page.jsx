@@ -4,7 +4,7 @@ import { BsStars } from "react-icons/bs";
 import { FaCloudDownloadAlt } from "react-icons/fa";
 import { TypeAnimation } from "react-type-animation";
 import mainIcon from "../../assets/company/mainIconsdark.svg";
-import myFile from "../../assets/mycv/Kanishka Pasindu - Software Engineer.pdf";
+import myFile from "../../assets/mycv/Kanishka Paisndu - Software Engineer.pdf";
 import FloatButtonAction from "../../components/button";
 import Footer from "../../components/footer";
 import Navigation from "../../components/navbar";
@@ -15,13 +15,14 @@ import style from "../Home/home.module.css";
 import Skills from "../Skills/page";
 import ContactUs from "../contact/page";
 import Experiance from "../Experiance/page";
+import BannerComponet from "../../components/banner";
 
 const Home = () =>
 {
   const [activeNav, setActiveNav] = useState("#");
   return (
     <div
-      className={`w-full h-full  text-white ${style.body} flex items-center justify-center flex-col`}
+      className={`w-full h-full  text-white ${style.body} flex items-center justify-center flex-col z-10`}
       id="home"
     >
       <Navigation />
@@ -31,10 +32,11 @@ const Home = () =>
           <div
             className={`${style.text} lg:w-[400px] lg:h-[53px] w-[300px] h-[45px] flex items-center justify-center rounded-xl gap-4 lg:mt-0 mt-24`}
           >
+
             <div className="text-2xl">
               <BsStars />
             </div>
-            <p>WELCOME TO MY PORTFOLIO</p>
+            <p className="lg:text-md text-sm">WELCOME TO MY PORTFOLIO</p>
           </div>
           <TypeAnimation
             sequence={[
@@ -104,6 +106,7 @@ const Home = () =>
               horror movies.
             </span>
           </p>
+
           <div className="mt-10 flex items-start justify-center gap-4 lg:flex-row flex-col md:flex-row">
             <a
               href="#myProjects"
@@ -126,11 +129,15 @@ const Home = () =>
               </button>
             </a>
           </div>
+          <div className="mt-5">
+            <BannerComponet />
+          </div>
         </div>
         <div className="lg:w-[50%] md:w-[60%] w-full flex items-center justify-center">
           <img src={mainIcon} alt="" />
         </div>
       </div>
+
       <div className="mt-10 md:mt-24">
         <Skills />
       </div>
@@ -140,7 +147,7 @@ const Home = () =>
       <div className="mt-40 md:mt-36">
         <Projects />
       </div>
-      <div className="mt-40 md:mt-36 w-[85%]">
+      <div className=" md:mt-36 w-[85%]">
         <Experiance />
       </div>
       <div className="mt-32 md:mt-36 w-[85%]">
