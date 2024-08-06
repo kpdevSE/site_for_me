@@ -3,8 +3,7 @@ import { Timeline } from "flowbite-react";
 import { HiCalendar } from "react-icons/hi";
 import { Badge } from "flowbite-react";
 
-export default function Experiance()
-{
+export default function Experiance() {
     return (
         <div id="experiance" className="w-[85%] mx-auto h-full mt-10 z-auto">
             <div className="flex items-center justify-center text-white lg:text-4xl gap-3 font-semibold text-2xl w-full">

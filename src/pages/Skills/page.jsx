@@ -1,4 +1,4 @@
-import {FaGraduationCap} from "react-icons/fa";
+import { FaGraduationCap } from "react-icons/fa";
 import bootstrap from '../../assets/tech/bootstrap.png';
 import css from '../../assets/tech/css.png';
 import express from '../../assets/tech/express-js-icon.png';
@@ -19,8 +19,7 @@ import vscode from '../../assets/tech/visual-studio-code-icon.png';
 import windows from '../../assets/tech/windows-10-icon.png';
 
 
-export default function Skills()
-{
+export default function Skills() {
     return (
         <div className='w-[85%] h-full lg:h-[40vh] md:h-full mx-auto flex items-center justify-center flex-col' id="skills">
             <div className="flex items-center justify-center gap-2">
@@ -32,24 +31,24 @@ export default function Skills()
             </div>
             <div className='w-full h-full mt-10'>
                 <div className='grid lg:grid-cols-9 gap-9 place-items-center md:grid-cols-6 grid-cols-3'>
-                    <img src={html} alt="" className='lg:w-[100px] lg:h-[80px] w-[70px] h-[55px]' />
-                    <img src={css} alt="" className='lg:w-[100px] lg:h-[80px] w-[70px] h-[55px]' />
-                    <img src={js} alt="" className='lg:w-[100px] lg:h-[80px] w-[70px] h-[55px]' />
-                    <img src={react} alt="" className='lg:w-[100px] lg:h-[80px] w-[70px] h-[55px]' />
-                    <img src={typescript} alt="" className='lg:w-[100px] lg:h-[80px] w-[70px] h-[55px]' />
-                    <img src={tailwind} alt="" className='lg:w-[100px] lg:h-[80px] w-[70px] h-[55px]' />
-                    <img src={windows} alt="" className='lg:w-[100px] lg:h-[80px] w-[70px] h-[55px]' />
-                    <img src={node} alt="" className='lg:w-[100px] lg:h-[80px] w-[70px] h-[55px]' />
-                    <img src={mongo} alt="" className='lg:w-[100px] lg:h-[80px] w-[70px] h-[55px]' />
-                    <img src={gt} alt="" className='lg:w-[100px] lg:h-[80px] w-[70px] h-[55px]' />
-                    <img src={next} alt="" className='lg:w-[100px] lg:h-[80px] w-[70px] h-[55px]' />
-                    <img src={prisma} alt="" className='lg:w-[100px] lg:h-[80px] w-[70px] h-[55px]' />
-                    <img src={bootstrap} alt="" className='lg:w-[100px] lg:h-[80px] w-[70px] h-[55px]' />
-                    <img src={mysql} alt="" className='lg:w-[100px] lg:h-[80px] w-[70px] h-[55px]' />
-                    <img src={php} alt="" className='lg:w-[100px] lg:h-[80px ] w-[70px] h-[55px]' />
-                    <img src={github} alt="" className='lg:w-[100px] lg:h-[80px] w-[70px] h-[55px]' />
-                    <img src={express} alt="" className='lg:w-[100px] lg:h-[80px] w-[70px] h-[55px]' />
-                    <img src={vscode} alt="" className='lg:w-[100px] lg:h-[80px] w-[70px] h-[55px]' />
+                    <img src={html} alt="" className='lg:w-[100px] lg:h-[80px] w-[70px] h-[55px] transition-all duration-300 hover:scale-110' />
+                    <img src={css} alt="" className='lg:w-[100px] lg:h-[80px] w-[70px] h-[55px] transition-all duration-300 hover:scale-110' />
+                    <img src={js} alt="" className='lg:w-[100px] lg:h-[80px] w-[70px] h-[55px] transition-all duration-300 hover:scale-110' />
+                    <img src={react} alt="" className='lg:w-[100px] lg:h-[80px] w-[70px] h-[55px] transition-all duration-300 hover:scale-110' />
+                    <img src={typescript} alt="" className='lg:w-[100px] lg:h-[80px] w-[70px] h-[55px] transition-all duration-300 hover:scale-110' />
+                    <img src={tailwind} alt="" className='lg:w-[100px] lg:h-[80px] w-[70px] h-[55px] transition-all duration-300 hover:scale-110' />
+                    <img src={windows} alt="" className='lg:w-[100px] lg:h-[80px] w-[70px] h-[55px] transition-all duration-300 hover:scale-110' />
+                    <img src={node} alt="" className='lg:w-[100px] lg:h-[80px] w-[70px] h-[55px] transition-all duration-300 hover:scale-110' />
+                    <img src={mongo} alt="" className='lg:w-[100px] lg:h-[80px] w-[70px] h-[55px] transition-all duration-300 hover:scale-110' />
+                    <img src={gt} alt="" className='lg:w-[100px] lg:h-[80px] w-[70px] h-[55px] transition-all duration-300 hover:scale-110' />
+                    <img src={next} alt="" className='lg:w-[100px] lg:h-[80px] w-[70px] h-[55px] transition-all duration-300 hover:scale-110' />
+                    <img src={prisma} alt="" className='lg:w-[100px] lg:h-[80px] w-[70px] h-[55px] transition-all duration-300 hover:scale-110' />
+                    <img src={bootstrap} alt="" className='lg:w-[100px] lg:h-[80px] w-[70px] h-[55px] transition-all duration-300 hover:scale-110' />
+                    <img src={mysql} alt="" className='lg:w-[100px] lg:h-[80px] w-[70px] h-[55px] transition-all duration-300 hover:scale-110' />
+                    <img src={php} alt="" className='lg:w-[100px] lg:h-[80px ] w-[70px] h-[55px] transition-all duration-300 hover:scale-110' />
+                    <img src={github} alt="" className='lg:w-[100px] lg:h-[80px] w-[70px] h-[55px] transition-all duration-300 hover:scale-110' />
+                    <img src={express} alt="" className='lg:w-[100px] lg:h-[80px] w-[70px] h-[55px] transition-all duration-300 hover:scale-110' />
+                    <img src={vscode} alt="" className='lg:w-[100px] lg:h-[80px] w-[70px] h-[55px] transition-all duration-300 hover:scale-110' />
                 </div>
             </div>
         </div>
